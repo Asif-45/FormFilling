@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="instances">
+  <test thread-count="2" name="Test(failed)" parallel="instances">
+    <classes>
+      <class name="fintoo.Testcases.TC_LoginTest_001">
+        <methods>
+          <include name="setReport"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+          <include name="down"/>
+          <include name="start"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- fintoo.Testcases.TC_LoginTest_001 -->
+      <class name="fintoo.Testcases.TC_LoginDDT_002">
+        <methods>
+          <include name="loginDDT" invocation-numbers="0 1"/>
+          <include name="setReport"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+          <include name="down"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- fintoo.Testcases.TC_LoginDDT_002 -->
+      <class name="fintoo.Testcases.TC_Userflow">
+        <methods>
+          <include name="setReport"/>
+          <include name="close"/>
+          <include name="userFlowTest"/>
+          <include name="tearDown"/>
+          <include name="down"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- fintoo.Testcases.TC_Userflow -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
